@@ -6,7 +6,7 @@
 /*   By: abaker <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/30 14:47:12 by abaker            #+#    #+#             */
-/*   Updated: 2021/09/30 14:47:44 by abaker           ###   ########.fr       */
+/*   Updated: 2021/10/05 15:56:05 by abaker           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,8 @@ static bool	validarg(char *arg)
 {
 	bool	neg;
 
+	if (!arg || arg[0] == '\0')
+		return (false);
 	neg = arg[0] == '-';
 	if (neg)
 		arg++;
