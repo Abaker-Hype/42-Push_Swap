@@ -20,7 +20,9 @@ echo "Shuffled Array"
 echo ${array[*]}
 echo "Push Swap Output"
 ./push_swap ${array[*]}
-echo "Intra Checker"
-./push_swap ${array[*]} | ./checker_Mac ${array[*]}
-echo "Bonus Checker"
-./checker ${array[*]}
+echo "Total moves"
+./push_swap ${array[*]} | wc -l
+#echo "Intra Checker"
+#./push_swap ${array[*]} | ./checker_Mac ${array[*]}
+#echo "Bonus Checker"
+#./checker ${array[*]}
